@@ -335,8 +335,8 @@ h2 {
   display: grid;
   align-content: start;
   gap: 10px;
-  min-height: 230px;
-  padding: 30px;
+  min-height: 280px;
+  padding: 18px;
   color: var(--blue-ink);
   background:
     radial-gradient(circle at top right, rgba(22, 167, 216, 0.16), transparent 42%),
@@ -350,6 +350,14 @@ h2 {
     radial-gradient(circle at top right, rgba(22, 167, 216, 0.26), transparent 42%),
     var(--blue-soft);
   transform: translateY(-4px);
+}
+
+.category-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--line);
 }
 
 .category-icon {
@@ -417,6 +425,53 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+}
+
+.menu-feature {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: end;
+  gap: 18px;
+  margin-bottom: 18px;
+  padding: 18px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.menu-feature img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.menu-feature span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.menu-feature strong {
+  display: block;
+  color: var(--blue-ink);
+  font-family: var(--display);
+  font-size: clamp(1.4rem, 3vw, 2.35rem);
+  line-height: 1.08;
+}
+
+.menu-feature-grid {
+  grid-template-columns: 1.25fr 0.9fr 0.9fr;
+}
+
+.menu-feature-grid img {
+  aspect-ratio: 1 / 1;
 }
 
 .menu-item {
@@ -708,6 +763,8 @@ cite {
   .quick-info,
   .category-strip,
   .menu-grid,
+  .menu-feature,
+  .menu-feature-grid,
   .review-grid,
   .contact-list,
   .footer-grid {
@@ -726,6 +783,10 @@ cite {
 
   .category-card {
     min-height: 210px;
+  }
+
+  .category-card img {
+    aspect-ratio: 16 / 10;
   }
 
   .menu-item {
