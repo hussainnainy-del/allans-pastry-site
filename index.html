@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allan's Pastry Shop Ltd. | Jamaican Bakery in Scarborough</title>
+  <meta name="description" content="Allan's Pastry Shop Ltd. is an authentic Jamaican bakery in Scarborough serving patties, hardo bread, pastries, and hot food." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Allan's Pastry Shop home">
+        <img class="brand-logo" src="brand-logo.jpg" alt="Allan's Pastry Shop logo" />
+        <span>
+          <strong>Allan's Pastry Shop</strong>
+          <small>Authentic Jamaican Bakery</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+        <a href="https://www.ubereats.com/ca/store/allans-pastry-shop/5Ufw6QFaVbyJ0bwtIMgkyw" target="_blank" rel="noopener">Uber Eats</a>
+        <a class="nav-call" href="tel:+14162923909">Call to Order</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <img class="hero-logo" src="brand-logo.jpg" alt="Allan's Pastry Shop logo" />
+          <p class="eyebrow">Scarborough, Ontario</p>
+          <h1>Allan's Pastry Shop Ltd.</h1>
+          <p class="hero-lede">Golden Jamaican patties, fresh-baked breads, classic sweets, and hot food served from a Kennedy Road plaza staple.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">View Menu</a>
+            <a class="btn btn-primary" href="https://www.ubereats.com/ca/store/allans-pastry-shop/5Ufw6QFaVbyJ0bwtIMgkyw" target="_blank" rel="noopener">Order on Uber Eats</a>
+            <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=3-3447+Kennedy+Road+Scarborough+ON+M1V+3S1" target="_blank" rel="noopener">Get Directions</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Shop highlights">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/f3/0f/ad/caption.jpg?w=900&h=700&s=1" alt="Plantain tart from Allan's Pastry Shop" />
+          <div class="hero-card">
+            <strong>4.3/5 Google rating</strong>
+            <span>786 reviews</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container quick-info" aria-label="Quick business information">
+        <div>
+          <span>Hours</span>
+          <strong>Mon-Sat, 9 AM-4 PM</strong>
+        </div>
+        <div>
+          <span>Phone</span>
+          <strong><a href="tel:+14162923909">(416) 292-3909</a></strong>
+        </div>
+        <div>
+          <span>Address</span>
+          <strong>3-3447 Kennedy Road</strong>
+        </div>
+        <div>
+          <span>Tip</span>
+          <strong>Plantain tarts sell out early</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow">Authentic Jamaican Baking</p>
+          <h2>A local stop for patties, bread, and hot plates.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>Allan's is known for tender, flaky patties with generous fillings, fresh hardo bread, coco bread, and familiar Jamaican sweets.</p>
+          <p>Most visits are quick, parking is available in the plaza lot, and frozen patties are available by the dozen for home.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Popular menu categories">
+      <a class="category-card" href="#menu" data-tab-target="hot">
+        <span class="category-icon">HJ</span>
+        <strong>Hot Food</strong>
+        <small>Jerk chicken, oxtail, curry goat, rice and peas</small>
+      </a>
+      <a class="category-card" href="#menu" data-tab-target="patties">
+        <span class="category-icon">AP</span>
+        <strong>Patties</strong>
+        <small>Beef, spicy beef, chicken, curry goat, vegetable</small>
+      </a>
+      <a class="category-card" href="#menu" data-tab-target="breads">
+        <span class="category-icon">HB</span>
+        <strong>Fresh Bread</strong>
+        <small>Hardo bread, raisin bread, coco bread, white loaf</small>
+      </a>
+      <a class="category-card" href="#menu" data-tab-target="sweets">
+        <span class="category-icon">PT</span>
+        <strong>Pastries</strong>
+        <small>Plantain tart, gizzada, coco drops, turnovers</small>
+      </a>
+    </section>
+
+    <section class="menu section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Menu and Prices</p>
+          <h2>Fresh daily, while quantities last.</h2>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button class="tab is-active" type="button" role="tab" aria-selected="true" data-tab="patties">Patties</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-tab="bulk">Bulk</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-tab="breads">Breads</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-tab="hot">Hot Food</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-tab="sweets">Sweets</button>
+        </div>
+
+        <div class="menu-panel is-active" id="patties" role="tabpanel">
+          <div class="menu-grid">
+            <article class="menu-item"><div><h3>Beef Patty</h3><p>Classic seasoned beef in flaky pastry.</p></div><strong>$4.99</strong></article>
+            <article class="menu-item"><div><h3>Spicy Beef Patty</h3><p>A little heat with the familiar Allan's filling.</p></div><strong>$4.99</strong></article>
+            <article class="menu-item"><div><h3>Chicken Patty</h3><p>Seasoned chicken wrapped in golden pastry.</p></div><strong>$4.99</strong></article>
+            <article class="menu-item"><div><h3>Curry Goat Patty</h3><p>Curry goat filling in a handheld patty.</p></div><strong>$4.99</strong></article>
+            <article class="menu-item"><div><h3>Vegetable Patty</h3><p>Savory vegetable filling.</p></div><strong>$4.99</strong></article>
+            <article class="menu-item highlight"><div><h3>Patty and Coco Bread</h3><p>A patty tucked into soft coco bread.</p></div><strong>$6.99</strong></article>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="bulk" role="tabpanel" hidden>
+          <div class="menu-grid">
+            <article class="menu-item highlight"><div><h3>Dozen Patties, Fresh</h3><p>Great for office lunches, family visits, and parties.</p></div><strong>~$20</strong></article>
+            <article class="menu-item highlight"><div><h3>Two Dozen Frozen</h3><p>Keep Allan's patties ready at home.</p></div><strong>~$40</strong></article>
+          </div>
+          <p class="menu-note">Call ahead for bulk availability: <a href="tel:+14162923909">(416) 292-3909</a>.</p>
+        </div>
+
+        <div class="menu-panel" id="breads" role="tabpanel" hidden>
+          <div class="menu-grid">
+            <article class="menu-item highlight"><div><h3>Hardo Bread</h3><p>Traditional Jamaican hard dough bread.</p></div><strong>$6.99</strong></article>
+            <article class="menu-item"><div><h3>Raisin Bread</h3><p>Sweet loaf with raisins.</p></div><strong>$7.99</strong></article>
+            <article class="menu-item"><div><h3>Coco Bread</h3><p>Soft bread made for patties.</p></div><strong>$2.49</strong></article>
+            <article class="menu-item"><div><h3>White Bread Loaf</h3><p>Fresh white sandwich loaf.</p></div><strong>$5.99</strong></article>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="hot" role="tabpanel" hidden>
+          <div class="menu-grid">
+            <article class="menu-item highlight"><div><h3>Jerk Chicken</h3><p>Classic Jamaican-style hot plate.</p></div><strong>$14.99</strong></article>
+            <article class="menu-item highlight"><div><h3>Chef's Special Oxtail</h3><p>Rich, slow-cooked oxtail.</p></div><strong>$20.89</strong></article>
+            <article class="menu-item"><div><h3>Curry Goat</h3><p>Ask for today's availability.</p></div><strong>Market Price</strong></article>
+            <article class="menu-item"><div><h3>Rice and Peas</h3><p>Classic side with red kidney beans.</p></div><strong>$4.99</strong></article>
+          </div>
+          <p class="menu-note">Hot food can sell out. Earlier visits are best.</p>
+        </div>
+
+        <div class="menu-panel" id="sweets" role="tabpanel" hidden>
+          <div class="menu-grid">
+            <article class="menu-item highlight"><div><h3>Plantain Tart</h3><p>Popular item. Come before noon.</p></div><strong>$3.99</strong></article>
+            <article class="menu-item"><div><h3>Gizzada</h3><p>Coconut tart with crisp pastry.</p></div><strong>$2.99</strong></article>
+            <article class="menu-item"><div><h3>Coco Drops</h3><p>Chewy coconut candy.</p></div><strong>$2.49</strong></article>
+            <article class="menu-item"><div><h3>Spice Buffin</h3><p>Jamaican-style spiced muffin.</p></div><strong>$2.99</strong></article>
+            <article class="menu-item"><div><h3>Fruit Turnover</h3><p>Flaky pastry with fruit filling.</p></div><strong>$3.49</strong></article>
+            <article class="menu-item"><div><h3>Busta</h3><p>Traditional Jamaican hard candy.</p></div><strong>$1.50</strong></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Community Favorite</p>
+          <h2>What customers say.</h2>
+        </div>
+        <div class="review-summary">
+          <strong>4.3</strong>
+          <span>Google rating from 786 reviews</span>
+        </div>
+        <div class="review-grid">
+          <blockquote>
+            <p>"Best patties in the GTA. Generous and delicious fillings and flakey dough. Their bread is excellent too."</p>
+            <cite>TripAdvisor Review</cite>
+          </blockquote>
+          <blockquote>
+            <p>"It's been years since I had a Jamaican Plantain Tart. They usually sell out early so plan your trip. This is the real thing."</p>
+            <cite>TripAdvisor Review</cite>
+          </blockquote>
+          <blockquote>
+            <p>"Allan's is a staple in Scarborough. I always get my patties from this place - the dough is tender and the filling is just spicy enough."</p>
+            <cite>Google Review</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="container visit-grid">
+        <div>
+          <p class="eyebrow">Visit Us</p>
+          <h2>Find Allan's on Kennedy Road.</h2>
+          <div class="contact-list">
+            <div>
+              <span>Address</span>
+              <p>3-3447 Kennedy Road<br />Scarborough, ON M1V 3S1</p>
+            </div>
+            <div>
+              <span>Hours</span>
+              <p>Monday-Saturday: 9:00 AM-4:00 PM<br />Sunday: Closed</p>
+            </div>
+            <div>
+              <span>Contact</span>
+              <p><a href="tel:+14162923909">(416) 292-3909</a><br /><a href="mailto:allanfoodsco@gmail.com">allanfoodsco@gmail.com</a></p>
+            </div>
+            <div>
+              <span>Instagram</span>
+              <p><a href="https://www.instagram.com/allanspastryshop" target="_blank" rel="noopener">@allanspastryshop</a><br />2,407 followers</p>
+            </div>
+            <div>
+              <span>Facebook</span>
+              <p><a href="https://www.facebook.com/AllansPastryShopLtd/" target="_blank" rel="noopener">Allan's Pastry Shop Ltd.</a></p>
+            </div>
+            <div>
+              <span>Delivery</span>
+              <p><a href="https://www.ubereats.com/ca/store/allans-pastry-shop/5Ufw6QFaVbyJ0bwtIMgkyw" target="_blank" rel="noopener">Order on Uber Eats</a></p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="visit-card">
+          <h3>Good to know</h3>
+          <ul>
+            <li>Plantain tarts sell out early. Come before noon.</li>
+            <li>Patties are available frozen by the dozen.</li>
+            <li>People typically spend about 10 minutes in store.</li>
+            <li>Parking is available in the plaza lot.</li>
+            <li>Average spend is about $4.99 per person.</li>
+          </ul>
+          <div class="visit-actions">
+            <a class="btn btn-primary" href="https://www.ubereats.com/ca/store/allans-pastry-shop/5Ufw6QFaVbyJ0bwtIMgkyw" target="_blank" rel="noopener">Order on Uber Eats</a>
+            <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=Allan%27s+Pastry+Shop+Ltd+3447+Kennedy+Road+Scarborough" target="_blank" rel="noopener">Open in Maps</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="brand-logo.jpg" alt="Allan's Pastry Shop logo" />
+        <strong>Allan's Pastry Shop Ltd.</strong>
+        <p>Authentic Jamaican Bakery in Scarborough, ON.</p>
+      </div>
+      <div>
+        <span>Call</span>
+        <a href="tel:+14162923909">(416) 292-3909</a>
+      </div>
+      <div>
+        <span>Email</span>
+        <a href="mailto:allanfoodsco@gmail.com">allanfoodsco@gmail.com</a>
+      </div>
+      <div>
+        <span>Order</span>
+        <a href="https://www.ubereats.com/ca/store/allans-pastry-shop/5Ufw6QFaVbyJ0bwtIMgkyw" target="_blank" rel="noopener">Uber Eats</a>
+      </div>
+      <div>
+        <span>Social</span>
+        <a href="https://www.instagram.com/allanspastryshop" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/AllansPastryShopLtd/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
